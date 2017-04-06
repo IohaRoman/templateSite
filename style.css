@@ -1,0 +1,245 @@
+body{
+    background-image: url("images/pageBG.png");
+}
+
+.central-layer{
+    width: 1100px;
+    height: 2100px;
+    background: white;
+    border-radius: 5px 5px 5px 5px; /* Скругление углов */
+    position: relative;
+    float: left;
+    top: 75px; /* Отступ */
+}
+
+.site-name {
+    right: -645px;
+    position: relative;
+    top: 100px; /* Отступ */
+    width: 200px; /* Размер */
+    height: 50px; /* Размер */
+    background: white; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    border-radius: 10px 10px 10px 10px; /* Скругление углов */
+    z-index: 2; /* позиция дива */
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.shadow-site-name{
+    right: -640px;
+    float: left;
+    position: relative;
+    top: 55px; /* Отступ */
+    width: 200px; /* Размер */
+    height: 50px; /* Размер */
+    background: #d3d3d3; /* Цвет фона */
+    border-radius: 10px 10px 10px 10px; /* Скругление углов */
+    z-index: 1; /* позиция дива */
+}
+.text-style-site-name {
+    font: 14pt sans-serif;
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.menu{
+    right: -300px;
+    position: relative;
+    top: 50px; /* Отступ */
+    align-content: center;
+}
+
+.baner{
+    margin: auto;
+    right: -50px;
+    float: left;
+    position: relative;
+    top: 70px; /* Отступ */
+    width: 1000px; /* Размер */
+    height: 250px; /* Размер */
+    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    z-index: 6;
+    background-image: url("images/baner.png");
+    background-size: cover;
+}
+.shadow-baner{
+    margin: auto;
+    right: 10px;
+    position: relative;
+    top: 75px; /* Отступ */
+    width: 1000px; /* Размер */
+    height: 250px; /* Размер */
+    background: #d3d3d3;
+    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    z-index: 5;
+}
+
+a.buttons-menu {
+    color: gray;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    outline: none;
+    border-radius: 1px;
+    background-image:
+            radial-gradient(1px 45% at 0% 50%, rgba(0,0,0,.6), transparent),
+            radial-gradient(1px 45% at 100% 50%, rgba(0,0,0,.6), transparent);
+}
+a.buttons-menu:hover {
+    color: red;
+    background-image:
+            radial-gradient(1px 45% at 0% 50%, rgba(0,0,0,.6), transparent),
+            radial-gradient(1px 45% at 100% 50%, rgba(0,0,0,.6), transparent);
+}
+a.buttons-menu:active {
+    background-image:
+            radial-gradient(45% 45% at 50% 100%, rgba(255,255,255,.9), rgba(255,255,255,0)),
+            linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.3));
+}
+
+.row1 {
+    margin: auto;
+    right: -50px;
+    float: left;
+    position: relative;
+    top: 100px; /* Отступ */
+    width: 1000px; /* Размер */
+    height: 150px; /* Размер */
+    text-align: center;
+}
+#text-preview{
+    font: 16pt sans-serif;
+    font-weight: 700;
+}
+#text-after-preview{
+    padding: 10px;
+    color: #282828;
+    font:12pt sans-serif;
+    text-align: center;
+}
+
+.buton-readmore {
+    position: relative;
+    color: white;
+    font: 8pt sans-serif;
+    font-weight: 900;
+    vertical-align: middle;
+    display: table-cell;
+    left: -500px;
+    top: 242px; /* Отступ */
+    width: 100px; /* Размер */
+    height: 30px; /* Размер */
+    background: #ed3237; /* Цвет фона */
+    text-align: center;
+    border-radius: 10px 10px 10px 10px; /* Скругление углов */
+    z-index: 7; /* позиция дива */
+}
+.shadow-buton-readmore {
+    position: relative;
+    top: 215px;
+    left: 497px;
+    width: 100px; /* Размер */
+    height: 30px; /* Размер */
+    background: #d3d3d3; /* Цвет фона */
+    border-radius: 10px 10px 10px 10px; /* Скругление углов */
+    z-index: 6; /* позиция дива */
+}
+.background-buton-readmore {
+    position: relative;
+    top: 180px;
+    left: 488px;
+    width: 120px; /* Размер */
+    height: 40px; /* Размер */
+    background: white; /* Цвет фона */
+    z-index: 5; /* позиция дива */
+}
+.lines-readmore {
+    margin: auto;
+    right: -50px;
+    float: left;
+    position: relative;
+    top: 90px; /* Отступ */
+    width: 1000px; /* Размер */  /
+text-align: center;
+
+}
+
+.row2 {
+    margin-top: 100px;
+    background-color: #fc0; /* Цвет фона слоя */
+    float: left; /* Обтекание по правому краю */
+    width: 1100px;
+    height: 260px;
+}
+#liniya {
+    width:110px;
+    height:250px;
+    background:#669900;
+    float:left;
+    margin-left:15px;
+
+}
+#liniya-right {
+     width:222px;
+     height:250px;
+     background:#669900;
+     float:left;
+     margin-left:15px;
+
+ }
+
+.como-om-lets-go{
+    margin: auto;
+    right: -10px;
+    float: left;
+    position: relative;
+    top: 5px; /* Отступ */
+    width: 80px; /* Размер */
+    height: 60px; /* Размер */
+    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    z-index: 6;
+
+    background-size: cover;
+
+}
+.shadow-como-om-lets-go{
+    margin: auto;
+    right: -5px;
+    float: left;
+    position: relative;
+    top: -50px; /* Отступ */
+    width: 80px; /* Размер */
+    height: 60px; /* Размер */
+    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    z-index: 5;
+    background-color: #d3d3d3;
+}
+
+.text-row2 {
+
+}
+
+#style-row2-text {
+    text-transform: uppercase;
+    color: #282828;
+    font:12pt sans-serif;
+    text-align: left;
+}
+
+.button-moreinfo {
+    position: relative;
+    color: white;
+    font: 8pt sans-serif;
+    font-weight: 900;
+    vertical-align: middle;
+    display: table-cell;
+    left: -500px;
+    top: 242px; /* Отступ */
+    width: 100px; /* Размер */
+    height: 30px; /* Размер */
+    background: #ed3237; /* Цвет фона */
+    text-align: center;
+}
