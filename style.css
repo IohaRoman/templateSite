@@ -169,28 +169,23 @@ text-align: center;
 
 .row2 {
     margin-top: 100px;
-    background-color: #fc0; /* Цвет фона слоя */
     float: left; /* Обтекание по правому краю */
     width: 1100px;
-    height: 260px;
+    height: 210px;
 }
 #liniya {
     width:110px;
-    height:250px;
-    background:#669900;
+    height:200px;
     float:left;
     margin-left:15px;
-
 }
 #liniya-right {
      width:222px;
-     height:250px;
-     background:#669900;
+     height:200px;
      float:left;
      margin-left:15px;
 
  }
-
 .como-om-lets-go{
     margin: auto;
     right: -10px;
@@ -217,29 +212,31 @@ text-align: center;
     z-index: 5;
     background-color: #d3d3d3;
 }
-
-.text-row2 {
-
-}
-
 #style-row2-text {
     text-transform: uppercase;
     color: #282828;
-    font:12pt sans-serif;
+    font:11pt sans-serif;
     text-align: left;
+    font-weight: 600;
+}
+.more-info {
+    position: relative;
+    top: 15px;
+
 }
 
-.button-moreinfo {
-    position: relative;
-    color: white;
-    font: 8pt sans-serif;
-    font-weight: 900;
-    vertical-align: middle;
-    display: table-cell;
-    left: -500px;
-    top: 242px; /* Отступ */
-    width: 100px; /* Размер */
-    height: 30px; /* Размер */
-    background: #ed3237; /* Цвет фона */
-    text-align: center;
+.row3{
+    margin-top: 100px;
+    float: left; /* Обтекание по правому краю */
+    width: 1100px;
+    height: 400px;
+    background: red;
+}
+.row3-midl {
+    width: 50%;
+    background: blue;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 100px;
 }
