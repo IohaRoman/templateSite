@@ -1,79 +1,83 @@
-body{
+body {
     background-image: url("images/pageBG.png");
 }
+p {
+    color: #282828;
+    font: 12pt sans-serif;
+    text-align: center;
+}
 
-.central-layer{
+.line-style {
+    width: 998px;
+    color: #c2c2c2;
+}
+.central-layer {
     width: 1100px;
     height: 2100px;
     background: white;
-    border-radius: 5px 5px 5px 5px; /* Скругление углов */
-    position: relative;
-    float: left;
-    top: 75px; /* Отступ */
+    border-radius: 5px 5px 5px 5px;
+    margin: auto;
 }
 
 .site-name {
-    right: -645px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background: white;
+    border: solid 1px black;
+    border-radius: 10px 10px 10px 10px;
+    top: 70px;
+    left: 5px;
     position: relative;
-    top: 100px; /* Отступ */
-    width: 200px; /* Размер */
-    height: 50px; /* Размер */
-    background: white; /* Цвет фона */
-    border: solid 1px black; /* Параметры рамки */
-    border-radius: 10px 10px 10px 10px; /* Скругление углов */
-    z-index: 2; /* позиция дива */
-    text-align: center;
     vertical-align: middle;
-    display: table-cell;
+    z-index: 2;
 }
-.shadow-site-name{
-    right: -640px;
-    float: left;
+.shadow-site-name {
+    margin: auto;
     position: relative;
-    top: 55px; /* Отступ */
-    width: 200px; /* Размер */
-    height: 50px; /* Размер */
-    background: #d3d3d3; /* Цвет фона */
-    border-radius: 10px 10px 10px 10px; /* Скругление углов */
-    z-index: 1; /* позиция дива */
+    top: 25px;
+    width: 200px;
+    height: 50px;
+    background: #d3d3d3;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
 }
 .text-style-site-name {
     font: 14pt sans-serif;
     font-weight: 900;
-    display: inline-block;
-    vertical-align: middle;
     text-align: center;
 }
 
-.menu{
-    right: -300px;
+.menu {
+    margin: auto;
     position: relative;
-    top: 50px; /* Отступ */
+    top: 50px;
     align-content: center;
+    left: 300px;
 }
 
-.banner{
+.banner {
     margin: auto;
     right: -50px;
     float: left;
     position: relative;
-    top: 70px; /* Отступ */
-    width: 1000px; /* Размер */
-    height: 250px; /* Размер */
-    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    top: 70px;
+    width: 1000px;
+    height: 250px;
+    border-radius: 10px 0px 10px 10px;
     z-index: 6;
     background-image: url("images/baner.png");
     background-size: cover;
 }
-.shadow-banner{
+.shadow-banner {
     margin: auto;
     right: 10px;
     position: relative;
-    top: 75px; /* Отступ */
-    width: 1000px; /* Размер */
-    height: 250px; /* Размер */
+    top: 75px;
+    width: 1000px;
+    height: 250px;
     background: #d3d3d3;
-    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    border-radius: 10px 0px 10px 10px;
     z-index: 5;
 }
 
@@ -85,40 +89,34 @@ a.buttons-menu {
     outline: none;
     border-radius: 1px;
     background-image:
-            radial-gradient(1px 45% at 0% 50%, rgba(0,0,0,.6), transparent),
-            radial-gradient(1px 45% at 100% 50%, rgba(0,0,0,.6), transparent);
+            radial-gradient(1px 45% at 0% 50%, rgba(0, 0, 0, .6), transparent),
+            radial-gradient(1px 45% at 100% 50%, rgba(0, 0, 0, .6), transparent);
 }
 a.buttons-menu:hover {
     color: red;
     background-image:
-            radial-gradient(1px 45% at 0% 50%, rgba(0,0,0,.6), transparent),
-            radial-gradient(1px 45% at 100% 50%, rgba(0,0,0,.6), transparent);
+            radial-gradient(1px 45% at 0% 50%, rgba(0, 0, 0, .6), transparent),
+            radial-gradient(1px 45% at 100% 50%, rgba(0, 0, 0, .6), transparent);
 }
 a.buttons-menu:active {
     background-image:
-            radial-gradient(45% 45% at 50% 100%, rgba(255,255,255,.9), rgba(255,255,255,0)),
-            linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.3));
+            radial-gradient(45% 45% at 50% 100%, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0)),
+            linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .3));
 }
 
-.text-after-banner {
+.text-position {
     margin: auto;
     right: -50px;
     float: left;
     position: relative;
-    top: 100px; /* Отступ */
-    width: 1000px; /* Размер */
-    height: 150px; /* Размер */
+    top: 110px;
+    width: 1000px;
+    height: 150px;
     text-align: center;
 }
-#text-preview{
+.text-style {
     font: 16pt sans-serif;
     font-weight: 700;
-}
-#text-after-preview{
-    padding: 10px;
-    color: #282828;
-    font:12pt sans-serif;
-    text-align: center;
 }
 
 .button-readmore {
@@ -129,88 +127,103 @@ a.buttons-menu:active {
     vertical-align: middle;
     display: table-cell;
     left: -500px;
-    top: 242px; /* Отступ */
-    width: 100px; /* Размер */
-    height: 30px; /* Размер */
-    background: #ed3237; /* Цвет фона */
+    top: 230px;
+    width: 100px;
+    height: 30px;
+    background: #ed3237;
     text-align: center;
-    border-radius: 10px 10px 10px 10px; /* Скругление углов */
-    z-index: 7; /* позиция дива */
+    border-radius: 10px 10px 10px 10px;
+    z-index: 7;
 }
 .shadow-button-readmore {
     position: relative;
-    top: 215px;
+    top: 203px;
     left: 497px;
-    width: 100px; /* Размер */
-    height: 30px; /* Размер */
-    background: #d3d3d3; /* Цвет фона */
-    border-radius: 10px 10px 10px 10px; /* Скругление углов */
-    z-index: 6; /* позиция дива */
+    width: 100px;
+    height: 30px;
+    background: #d3d3d3;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 6;
 }
 .background-button-readmore {
     position: relative;
-    top: 180px;
+    top: 170px;
     left: 488px;
-    width: 120px; /* Размер */
-    height: 40px; /* Размер */
-    background: white; /* Цвет фона */
-    z-index: 5; /* позиция дива */
+    width: 120px;
+    height: 40px;
+    background: white;
+    z-index: 5;
 }
 .three-lines {
     margin: auto;
     right: -50px;
     float: left;
     position: relative;
-    top: 90px; /* Отступ */
-    width: 1000px; /* Размер */  /
+    top: 75px;
+    width: 1000px;
     text-align: center;
 }
 
-.text-after-button-readmore {
+.space-before-images {
     margin-top: 100px;
     float: left;
 }
-#descriptions-image {
-    width:110px;
-    float:left;
-    margin-left:15px;
+.descriptions-image {
+    width: 110px;
+    float: left;
+    margin-left: 15px;
 }
-#descriptions-image-right {
-     width:220px;
-     float:left;
-     margin-left:15px;
+.descriptions-image-right {
+     width: 220px;
+     float: left;
+     margin-left: 15px;
 }
-.position-image{
+.position-image {
     right: -10px;
     float: left;
     position: relative;
-    top: 5px; /* Отступ */
-    width: 80px; /* Размер */
-    height: 60px; /* Размер */
-    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    top: 5px;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px 0px 10px 10px;
     z-index: 6;
     background-size: cover;
 }
-.shadow-position-image{
+.shadow-position-image {
     margin: auto;
     right: -5px;
     float: left;
     position: relative;
-    top: -50px; /* Отступ */
-    width: 80px; /* Размер */
-    height: 60px; /* Размер */
-    border-radius: 10px 0px 10px 10px; /* Скругление углов */
+    top: -50px;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px 0px 10px 10px;
     z-index: 5;
     background-color: #d3d3d3;
 }
-#style-row2-text {
+.style-description-text {
     text-transform: uppercase;
     color: #282828;
-    font:11pt sans-serif;
+    font: 11pt sans-serif;
     text-align: left;
     font-weight: 600;
 }
 .more-info {
     position: relative;
     top: 15px;
+}
+.more-info-button {
+    color: red;
+    font: 14pt sans-serif;
+}
+.description {
+    text-align: left;
+}
+
+.footer {
+    height: 100px;
+    color: white;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
 }
