@@ -7,7 +7,7 @@ p {
     text-align: center;
 }
 
-.line-style {
+.line {
     width: 998px;
     color: #c2c2c2;
 }
@@ -42,7 +42,7 @@ p {
     border-radius: 10px 10px 10px 10px;
     z-index: 1;
 }
-.text-style-site-name {
+.text-site-name {
     font: 14pt sans-serif;
     font-weight: 900;
     text-align: center;
@@ -114,7 +114,7 @@ a.buttons-menu:active {
     height: 150px;
     text-align: center;
 }
-.text-style {
+.text {
     font: 16pt sans-serif;
     font-weight: 700;
 }
@@ -178,7 +178,7 @@ a.buttons-menu:active {
      float: left;
      margin-left: 15px;
 }
-.position-image {
+.image {
     right: -10px;
     float: left;
     position: relative;
@@ -201,7 +201,7 @@ a.buttons-menu:active {
     z-index: 5;
     background-color: #d3d3d3;
 }
-.style-description-text {
+.description-text {
     text-transform: uppercase;
     color: #282828;
     font: 11pt sans-serif;
@@ -217,6 +217,54 @@ a.buttons-menu:active {
     font: 14pt sans-serif;
 }
 .description {
+    text-align: left;
+}
+
+.three-box-on-line {
+    right: -150px;
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 450px;
+    border-radius: 10px 0px 10px 10px;
+    z-index: 6;
+    background-size: cover;
+    background-color: #e2e2e2;
+}
+.shadow-three-box-on-line {
+    margin: auto;
+    right: -140px;
+    float: left;
+    position: relative;
+    top: -440px;
+    width: 250px;
+    height: 450px;
+    border-radius: 10px 0px 10px 10px;
+    z-index: 5;
+    background-color: #d3d3d3;
+}
+.space-three-box {
+    width: 150px;
+    height: 500px;
+    float: left;
+}
+.text-three-box {
+    font: 14pt sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 35px;
+    color: #5D5D5D;
+}
+.size-image {
+    margin-top: 20px;
+    width: 250px;
+    background-size: cover;
+}
+.space {
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.space P {
     text-align: left;
 }
 
