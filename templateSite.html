@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>templateSite</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 </head>
 <body>
 <div id="header">
@@ -21,27 +22,35 @@
         <a href="#" class="buttons-menu">PRODUCTS </a>
         <a href="#" class="buttons-menu">CONTACT </a>
     </div>
-    <img class="banner" src="images/baner.png" />
-    <div class="shadow-banner"></div>
+    <div class="block">
+        <img class="banner" src="images/baner.png" />
+        <div class="shadow-banner"></div>
+    </div>
     <div class="text-position">
         <b class="text">LOREM IPSUM </b>
         <p>Donec nec justo eget felis facilisis fermentum. <br />Aliquam portt or mauris sit a met orci. Aenean dignissim pellenteque files. </p>
     </div>
-    <div class="three-lines">
-        <hr class="line"/>
-        <hr class="line"/>
-        <hr class="line"/>
+    <div class="block-readmore">
+        <div class="three-lines">
+            <hr />
+            <hr />
+            <hr />
+        </div>
+        <div class="button-readmore">
+            <div class="text-readmore">READ MORE </div>
+        </div>
+        <div class="shadow-button-readmore"></div>
+        <div class="background-button-readmore"></div>
     </div>
-    <div class="button-readmore">READ MORE </div>
-    <div class="shadow-button-readmore"></div>
-    <div class="background-button-readmore"></div>
     <div class="text-position">
         <b class="text">VIVAMUS VEST </b>
         <p>Sed adipiscing ornare risus. Morbi est est, sit amet, sagittis vel, euismod vel, velit. <br />Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. </p>
     </div>
     <div class="space-before-images">
         <div class="descriptions-image">
-            <img class="image" src="images/iconPencil.png" />
+            <div class="image">
+                <span class="icons"><i class="fa fa-pencil" aria-hidden="true"></i> </span>
+            </div>
             <div class="shadow-position-image"></div>
         </div>
         <div class="descriptions-image-right">
@@ -52,12 +61,14 @@
                 <p class="description">Sed egestas, ante et vulputate volutpat, eros pede semper est,vitae luctus metus libero eu augue. Morbi purus libero,  id... </p>
                 <div class="more-info">
                     <b class="description-text">MORE INFO </b>
-                    <span class="more-info-button">> </span>
+                    <span class="more-info-button"><i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
                 </div>
             </div>
         </div>
-        <div class="descriptions-image" >
-            <img class="image" src="images/iconparty.png" />
+        <div class="descriptions-image">
+            <div class="image">
+                <span class="icons"><i class="fa fa-users" aria-hidden="true"></i> </span>
+            </div>
             <div class="shadow-position-image"></div>
         </div>
         <div class="descriptions-image-right">
@@ -68,12 +79,14 @@
                 <p class="description">Ced egestas, ante et vulputate volutpat, semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucib... </p>
                 <div class="more-info">
                     <b class="description-text">MORE INFO </b>
-                    <span class="more-info-button">> </span>
+                    <span class="more-info-button"><i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
                 </div>
             </div>
         </div>
         <div class="descriptions-image">
-            <img class="image" src="images/iconwrenh.png" />
+            <div class="image">
+                <span class="icons"><i class="fa fa-wrench" aria-hidden="true"></i> </span>
+            </div>
             <div class="shadow-position-image"></div>
         </div>
         <div class="descriptions-image-right">
@@ -84,7 +97,7 @@
                 <p class="description">Tegestas, ante et vulputate volutpat, eros semper est, vitae luctus metus eu augue. Morbi purus libero, fauc... </p>
                 <div class="more-info">
                     <b class="description-text">MORE INFO </b>
-                    <span class="more-info-button">> </span>
+                    <span class="more-info-button"><i class="fa fa-chevron-right" aria-hidden="true"></i>  </span>
                 </div>
             </div>
         </div>
@@ -94,50 +107,79 @@
         <p>Fusce lobortis lorem at ipsum semper sagittis </p>
     </div>
     <div class="space-before-images">
-        <div class="descriptions-image">
+        <div class="just-check">
             <div class="three-box-on-line">
                 <div class="text-three-box">Vestibulum commodo felis quis tortor </div>
                 <img class="size-image" src="images/maxPain.png" />
                 <div class="space">
                     <p>Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. </p>
-                    <div class="more-info">
-                        <b class="description-text">MORE INFO </b>
-                        <span class="more-info-button">> </span>
-                    </div>
+                    <b class="description-text">MORE INFO </b>
+                    <span class="more-info-button"><i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
                 </div>
             </div>
             <div class="shadow-three-box-on-line"></div>
         </div>
         <div class="space-three-box"></div>
-        <div class="descriptions-image" >
+        <div class="just-check" >
             <div class="three-box-on-line">
                 <div class="text-three-box">Vestibulum commodo felis quis tortor </div>
                 <img class="size-image" src="images/girlInDress.png" />
                 <div class="space">
                     <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus </p>
-                    <div class="more-info">
-                        <b class="description-text">MORE INFO </b>
-                        <span class="more-info-button">> </span>
-                    </div>
+                    <b class="description-text">MORE INFO </b>
+                    <span class="more-info-button"><i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
                 </div>
             </div>
             <div class="shadow-three-box-on-line"></div>
         </div>
         <div class="space-three-box"></div>
-        <div class="descriptions-image">
+        <div class="just-check">
             <div class="three-box-on-line">
                 <div class="text-three-box">Vestibulum commodo felis quis tortor </div>
                 <img class="size-image" src="images/girlInShawl.png" />
                 <div class="space">
                     <p>Faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique </p>
-                    <div class="more-info">
-                        <b class="description-text">MORE INFO </b>
-                        <span class="more-info-button">> </span>
-                    </div>
+                    <b class="description-text">MORE INFO </b>
+                    <span class="more-info-button"><i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
                 </div>
             </div>
             <div class="shadow-three-box-on-line"></div>
         </div>
+    </div>
+    <div class="text-position">
+        <b class="text">NUNC DIGINSS </b>
+        <p>Praesent dapibus, neque id cursus faucibus, <br />tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat <br />volutpat. Nam dui mi, tincidunt quis, accumsan porttitor </p>
+    </div>
+    <div class="text-products">OUR PRODUCTS </div>
+    <div class="group-products">
+        <div>integer vir </div>
+        <div>donce ametuno </div> <br />
+        <div>voluptanin </div>
+        <div>tincidun </div>
+        <div>porttion souti </div> <br />
+        <div>namdui sinosi </div>
+        <div>fermnutin </div>
+    </div>
+    <div class="group-products-shadow">
+        <div>integer vir </div>
+        <div>donce ametuno </div> <br />
+        <div>voluptanin </div>
+        <div>tincidun </div>
+        <div>porttion souti </div> <br />
+        <div>namdui sinosi </div>
+        <div>fermnutin </div>
+    </div>
+    <div class="block-readmore">
+        <div class="three-lines">
+            <hr />
+            <hr />
+            <hr />
+        </div>
+        <div class="button-readmore">
+            <div class="text-readmore">VIEW MORE </div>
+        </div>
+        <div class="shadow-button-readmore"></div>
+        <div class="background-button-readmore"></div>
     </div>
 </div>
 <div class="footer">Copyright(c) website name. <br />Designed by: www.alltemplateneeds.com  /  Images from: www.wallpaperswide.com </div>

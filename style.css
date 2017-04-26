@@ -2,34 +2,48 @@ body {
     background-image: url("images/pageBG.png");
 }
 p {
-    color: #282828;
-    font: 12pt sans-serif;
+    color: grey;
+    font: 12pt SourceSansPro Regular;
     text-align: center;
 }
-
-.line {
-    width: 998px;
-    color: #c2c2c2;
+@font-face {
+    font-family: SourceSansPro Blod;
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/SourceSansPro/SourceSansProBold/SourceSansProBold.ttf");
 }
+@font-face {
+    font-family: SourceSansPro Regular;
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/SourceSansPro/SourceSansProRegular/SourceSansProRegular.ttf");
+}
+hr {
+    height: 1px;
+    border: none;
+    width: 90%;
+    color: #c2c2c2;
+    background-color: #c2c2c2;
+    margin-top: auto;
+}
+
 .central-layer {
     width: 1100px;
-    height: 2100px;
-    background: white;
+    height: 2300px;
+    background: #ebebeb;
     border-radius: 5px 5px 5px 5px;
     margin: auto;
 }
 
 .site-name {
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    background: white;
-    border: solid 1px black;
-    border-radius: 10px 10px 10px 10px;
-    top: 70px;
-    left: 5px;
     position: relative;
-    vertical-align: middle;
+    width: 200px;
+    height: 90px;
+    margin: auto;
+    background: #ebebeb;
+    border-radius: 10px 10px 10px 10px;
+    top: 110px;
+    left: 5px;
     z-index: 2;
 }
 .shadow-site-name {
@@ -37,15 +51,17 @@ p {
     position: relative;
     top: 25px;
     width: 200px;
-    height: 50px;
+    height: 90px;
     background: #d3d3d3;
     border-radius: 10px 10px 10px 10px;
     z-index: 1;
 }
 .text-site-name {
-    font: 14pt sans-serif;
-    font-weight: 900;
+    font: 24pt SourceSansPro Blod;
     text-align: center;
+    position: relative;
+    margin: auto;
+    top: 25%;
 }
 
 .menu {
@@ -53,35 +69,10 @@ p {
     position: relative;
     top: 50px;
     align-content: center;
-    left: 300px;
+    text-align: center;
 }
-
-.banner {
-    margin: auto;
-    right: -50px;
-    float: left;
-    position: relative;
-    top: 70px;
-    width: 1000px;
-    height: 250px;
-    border-radius: 10px 0px 10px 10px;
-    z-index: 6;
-    background-image: url("images/baner.png");
-    background-size: cover;
-}
-.shadow-banner {
-    margin: auto;
-    right: 10px;
-    position: relative;
-    top: 75px;
-    width: 1000px;
-    height: 250px;
-    background: #d3d3d3;
-    border-radius: 10px 0px 10px 10px;
-    z-index: 5;
-}
-
 a.buttons-menu {
+    font: 14pt SourceSansPro Regular;
     color: gray;
     display: inline-block;
     text-decoration: none;
@@ -104,67 +95,108 @@ a.buttons-menu:active {
             linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .3));
 }
 
-.text-position {
+.block {
+    width: 1100px;
+    height: 430px;
     margin: auto;
-    right: -50px;
+    position: relative;
+    float: left;
+    top: 50px;
+    align-content: center;
+}
+.banner {
+    left: 50px;
+    top: 20px;
+    margin: auto;
     float: left;
     position: relative;
-    top: 110px;
     width: 1000px;
-    height: 150px;
+    height: 350px;
+    border-radius: 10px 0px 10px 10px;
+    z-index: 6;
+    background-size: cover;
+}
+.shadow-banner {
+    top: 25px;
+    margin: auto;
+    right: 10px;
+    position: relative;
+    width: 1000px;
+    height: 350px;
+    background: #d3d3d3;
+    border-radius: 10px 0px 10px 10px;
+    z-index: 5;
+}
+
+.text-position {
+    margin: auto;
+    float: left;
+    position: relative;
+    top: 50px;
+    width: 1100px;
+    height: 120px;
     text-align: center;
 }
 .text {
-    font: 16pt sans-serif;
+    font: 26pt SourceSansPro Blod;
     font-weight: 700;
 }
 
-.button-readmore {
+.block-readmore {
+    top: 50px;
+    width: 1100px;
+    height: 100px;
+    margin: auto;
     position: relative;
-    color: white;
-    font: 8pt sans-serif;
-    font-weight: 900;
-    vertical-align: middle;
-    display: table-cell;
-    left: -500px;
-    top: 230px;
+    float: left;
+}
+.text-readmore {
+    font: 10pt SourceSansPro Blod;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 20%;
+}
+.button-readmore {
+    margin: auto;
+    position: relative;
+    color: #ebebeb;
+    font: 10pt SourceSansPro Blod;
     width: 100px;
     height: 30px;
     background: #ed3237;
     text-align: center;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     z-index: 7;
 }
 .shadow-button-readmore {
+    margin: auto;
     position: relative;
-    top: 203px;
-    left: 497px;
+    left: -2px;
+    top: -28px;
     width: 100px;
     height: 30px;
     background: #d3d3d3;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     z-index: 6;
 }
 .background-button-readmore {
     position: relative;
-    top: 170px;
-    left: 488px;
+    margin: auto;
     width: 120px;
     height: 40px;
-    background: white;
+    top: -65px;
+    background: #ebebeb;
     z-index: 5;
 }
 .three-lines {
-    margin: auto;
-    right: -50px;
-    float: left;
+    top: 30px;
     position: relative;
-    top: 75px;
-    width: 1000px;
     text-align: center;
 }
 
 .space-before-images {
+    width: 1100px;
     margin-top: 100px;
     float: left;
 }
@@ -178,21 +210,30 @@ a.buttons-menu:active {
      float: left;
      margin-left: 15px;
 }
-.image {
-    right: -10px;
-    float: left;
+.icons {
+    font: 24pt SourceSansPro Blod;
+    text-align: center;
     position: relative;
-    top: 5px;
+    margin: auto;
+    top: 15%;
+}
+.image {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 25%;
+    right: -15px;
     width: 80px;
     height: 60px;
     border-radius: 10px 0px 10px 10px;
     z-index: 6;
     background-size: cover;
+    background-color: #373435;
+    color: #ebebeb;
 }
 .shadow-position-image {
     margin: auto;
     right: -5px;
-    float: left;
     position: relative;
     top: -50px;
     width: 80px;
@@ -202,24 +243,27 @@ a.buttons-menu:active {
     background-color: #d3d3d3;
 }
 .description-text {
+    position: static;
     text-transform: uppercase;
     color: #282828;
-    font: 11pt sans-serif;
+    font: 13pt SourceSansPro Blod;
     text-align: left;
     font-weight: 600;
 }
-.more-info {
-    position: relative;
-    top: 15px;
-}
 .more-info-button {
     color: red;
-    font: 14pt sans-serif;
+    font: 11pt SourceSansPro Blod;
 }
 .description {
     text-align: left;
 }
 
+.just-check {
+    height: 450px;
+    width: 110px;
+    float: left;
+    margin-left: 15px;
+}
 .three-box-on-line {
     right: -150px;
     float: left;
@@ -245,12 +289,11 @@ a.buttons-menu:active {
 }
 .space-three-box {
     width: 150px;
-    height: 500px;
+    height: 10px;
     float: left;
 }
 .text-three-box {
-    font: 14pt sans-serif;
-    font-weight: 600;
+    font: 14pt SourceSansPro Blod;
     margin-top: 40px;
     margin-left: 35px;
     color: #5D5D5D;
@@ -268,7 +311,74 @@ a.buttons-menu:active {
     text-align: left;
 }
 
+.box {
+    width: 1100px;
+    height: 200px;
+    margin: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.text-products {
+    width: 1100px;
+    height: 60px;
+    top: 70px;
+    margin: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+    font: 16pt Tahoma;
+    color: #ed3237;
+}
+.group-products {
+    width: 1100px;
+    height: 150px;
+    top: 70px;
+    margin: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.group-products div {
+    font: 12pt SourceSansPro Blod;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #d3d3d3;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 5;
+}
+.group-products-shadow {
+    width: 1100px;
+    height: 10px;
+    top: -83px;
+    left: 3px;
+    margin: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.group-products-shadow div {
+    font: 12pt SourceSansPro Blod;
+    text-align: center;
+    text-transform: uppercase;
+    left: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #d3d3d3;
+    background-color: #ebebeb;
+    z-index: 6;
+}
+
 .footer {
+    margin: auto;
     height: 100px;
     color: white;
     position: relative;
