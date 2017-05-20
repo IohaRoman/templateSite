@@ -4,7 +4,7 @@ body {
 }
 p {
     color: grey;
-    font: 12pt SourceSansPro Regular;
+    font: 1rem SourceSansPro Regular;
     text-align: center;
 }
 @font-face {
@@ -29,6 +29,8 @@ hr {
 }
 
 .central-layer {
+    position: relative;
+    top: -50px;
     width: 90%;
     max-width: 1100px;
     height: 2300px;
@@ -37,25 +39,23 @@ hr {
     -webkit-border-radius: 1em;
     border-radius: 1em;
     margin: auto;
-    /*behavior: url(ie-css3.htc);*/
 }
-
 .site-name {
     position: relative;
-    width: 30%;
+    width: 100%;
     max-width: 200px;
     height: 90px;
     margin: auto;
     background: #ebebeb;
     border-radius: 10px 10px 10px 10px;
-    top: 110px;
+    top: 70px;
     left: 5px;
     z-index: 2;
 }
 .shadow-site-name {
     margin: auto;
     position: relative;
-    top: 25px;
+    top: -10px;
     width: 30%;
     max-width: 200px;
     height: 90px;
@@ -64,7 +64,7 @@ hr {
     z-index: 1;
 }
 .text-site-name {
-    font: 24pt SourceSansPro Blod;
+    font: 2.2rem SourceSansPro Blod;
     text-align: center;
     position: relative;
     margin: auto;
@@ -79,7 +79,7 @@ hr {
     text-align: center;
 }
 a.buttons-menu {
-    font: 14pt SourceSansPro Regular;
+    font: 1.2rem SourceSansPro Regular;
     color: gray;
     display: inline-block;
     text-decoration: none;
@@ -149,7 +149,7 @@ a.buttons-menu:active {
     text-align: center;
 }
 .text {
-    font: 26pt SourceSansPro Blod;
+    font: 2.4rem SourceSansPro Blod;
     font-weight: 700;
 }
 
@@ -163,7 +163,7 @@ a.buttons-menu:active {
     float: left;
 }
 .text-readmore {
-    font: 10pt SourceSansPro Blod;
+    font: 0.9rem SourceSansPro Blod;
     text-align: center;
     position: relative;
     margin: auto;
@@ -215,7 +215,6 @@ a.buttons-menu:active {
     max-width: 1100px;
     margin-top: 10%;
     float: left;
-    background-color: red;
 }
 .descriptions-image {
     width: 9%;
@@ -231,7 +230,7 @@ a.buttons-menu:active {
     margin-left: 15px;
 }
 .icons {
-    font: 24pt SourceSansPro Blod;
+    font: 2rem SourceSansPro Blod;
     text-align: center;
     position: relative;
     margin: auto;
@@ -279,39 +278,47 @@ a.buttons-menu:active {
     text-align: left;
 }
 
-.just-check {
-    left: 11%;
-    position: relative;
-    width: 11%;
-    max-width: 110px;
-    height: 450px;
-    float: left;
-    margin-left: 2%;
-    background-color: yellow;
-}
-.three-box-on-line {
+.central-three-blocks {
     margin: auto;
-    float: left;
     position: relative;
-    width: 250px;
+    width: 900px;
+    max-width: 100%;
     height: 450px;
-    border-radius: 10px 0px 10px 10px;
     z-index: 6;
     background-size: cover;
-    background-color: #e2e2e2;
+}
+.space-three-blocks {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 1100px;
+    height: 450px;
 }
 .shadow-three-box-on-line {
-    margin: auto;
-    left: -10%;
     float: left;
+    margin: 0 2% auto;
     position: relative;
-    top: -98%;
-    width: 250%;
+    width: 30%;
     max-width: 250px;
     height: 450px;
-    border-radius: 10px 0px 10px 10px;
-    z-index: 5;
+    border-radius: 2% 0% 2% 2%;
+    z-index: 6;
+    background-size: cover;
     background-color: #d3d3d3;
+}
+.three-box-on-line {
+    float: left;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    left: 5%;
+    bottom: 2%;
+    max-width: 250px;
+    height: 450px;
+    border-radius: 2% 0% 2% 2%;
+    z-index: 5;
+    background-size: cover;
+    background-color: #e2e2e2;
 }
 .space-three-box {
     width: 150px;
@@ -319,19 +326,21 @@ a.buttons-menu:active {
     float: left;
 }
 .text-three-box {
-    font: 14pt SourceSansPro Blod;
-    margin-top: 40px;
-    margin-left: 35px;
+    font: 1.2rem SourceSansPro Blod;
+    margin-top: 15%;
+    margin-left: 10%;
     color: #5D5D5D;
 }
 .size-image {
-    margin-top: 20px;
-    width: 250px;
+    margin-top: 10%;
+    width: 100%;
+    max-width: 250px;
     background-size: cover;
+    background-color: #0d3349;
 }
 .space {
-    margin-top: 20px;
-    margin-left: 35px;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 .space P {
     text-align: left;
@@ -346,27 +355,29 @@ a.buttons-menu:active {
     text-align: center;
 }
 .text-products {
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     height: 60px;
-    top: 70px;
+    top: 3%;
     margin: auto;
     float: left;
     position: relative;
     text-align: center;
-    font: 16pt Tahoma;
+    font: 1.4rem Tahoma;
     color: #ed3237;
 }
 .group-products {
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     height: 150px;
-    top: 70px;
+    top: 3%;
     margin: auto;
     float: left;
     position: relative;
     text-align: center;
 }
 .group-products div {
-    font: 12pt SourceSansPro Blod;
+    font: 1rem SourceSansPro Blod;
     text-align: center;
     text-transform: uppercase;
     margin-top: 10px;
@@ -379,9 +390,10 @@ a.buttons-menu:active {
     z-index: 5;
 }
 .group-products-shadow {
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     height: 10px;
-    top: -83px;
+    top: -3.7%;
     left: 3px;
     margin: auto;
     float: left;
@@ -389,7 +401,7 @@ a.buttons-menu:active {
     text-align: center;
 }
 .group-products-shadow div {
-    font: 12pt SourceSansPro Blod;
+    font: 1rem SourceSansPro Blod;
     text-align: center;
     text-transform: uppercase;
     left: 5px;
@@ -408,6 +420,6 @@ a.buttons-menu:active {
     height: 100px;
     color: white;
     position: relative;
-    padding-top: 20px;
+    padding-top: 1%;
     text-align: center;
 }
